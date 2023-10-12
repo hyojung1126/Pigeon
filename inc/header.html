@@ -1,0 +1,150 @@
+    <a href="../pages/index.html" class="header_icon"><div class="logo"><img src="../images/logo.png" alt=""></div></a>
+
+    <div class="menu">
+                <ul class="gnb">
+                    <li>
+                        <a href="../pages/about.html">피죤소개</a>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">피죤철학</a></li>
+                            <li><a href="#">피죤 CI</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages/brand.html">브랜드</a>
+                        <ul>
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">피죤</a></li>
+                            <li><a href="#">퓨어</a></li>
+                            <li><a href="#">무균무때</a></li>
+                            <li><a href="#">액츠</a></li>
+                            <li><a href="#">울터치</a></li>
+                            <li><a href="#">습기제로</a></li>
+                        </ul>
+                        
+                    </li> 
+                    <li>
+                        <a href="../pages/news.html">피죤 소식</a>
+                        <ul>
+                            <li><a href="#">CF</a></li>
+                            <li><a href="#">피죤뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages/job.html">채용 및 문의</a>
+                        <ul>
+                            <li><a href="">인재채용</a></li>
+                            <li><a href="">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="select">
+                    <a href="#">KR</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">CN</a></li>
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#">ES</a></li>
+                    </ul>
+                    <div><i class="xi-angle-down"></i></div>
+                </div>
+            
+
+                <div class="link">
+                    <a href="http://minishop.gmarket.co.kr/pigeonmall" target="_blank">피죤 공식몰</a>
+                    <i class="xi-arrow-up"></i>
+                </div>
+    </div>
+
+    <div class="mobile_menu">
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+
+    <div class="mMenu"> 
+        <ul class="sideMenu">
+            <li class="select">
+                <a href="#">KR</a>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">CN</a></li>
+                    <li><a href="#">RU</a></li>
+                    <li><a href="#">ES</a></li>
+                </ul>
+                <div><i class="xi-angle-down"></i></div>
+            </li>
+            <li class="link">
+                <a href="http://minishop.gmarket.co.kr/pigeonmall" target="_blank">피죤 공식몰</a>
+                <i class="xi-arrow-up"></i>
+            </li>
+        </ul>
+        <ul class="gnbMenu">
+            <li>
+                <a href="#">피죤소개</a>
+                <ul>
+                    <li><a href="../pages/about.html">회사소개</a></li>
+                    <li><a href="#">피죤철학</a></li>
+                    <li><a href="#">피죤 CI</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">브랜드</a>
+                <ul>
+                    <li><a href="../pages/brand.html">전체</a></li>
+                    <li><a href="#">피죤</a></li>
+                    <li><a href="#">퓨어</a></li>
+                    <li><a href="#">무균무때</a></li>
+                    <li><a href="#">액츠</a></li>
+                    <li><a href="#">울터치</a></li>
+                    <li><a href="#">습기제로</a></li>
+                </ul>
+                
+            </li> 
+            <li>
+                <a href="#">피죤 소식</a>
+                <ul>
+                    <li><a href="../pages/news.html">CF</a></li>
+                    <li><a href="#">피죤뉴스</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">채용 및 문의</a>
+                <ul>
+                    <li><a href="../pages/job.html">인재채용</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<script>
+
+    // header
+    $('.gnb > li').hover(function(){
+        $('.dim').stop().slideDown()
+        $('.gnb ul').stop().slideDown()
+    },
+    function(){
+        $('.dim').stop().slideUp()
+        $('.gnb ul').stop().slideUp()
+    })
+
+    $('.select').click(function(){
+        $('.select ul').toggle()
+        $('.select div').toggleClass('active')
+    })
+
+    $('.mobile_menu').click(function(){
+        $('.mobile_menu span').toggleClass('over')
+
+        $('.mMenu').slideToggle()
+    })
+
+    $('.gnbMenu > li > a').click(function(){
+        $(this).parent().children('ul').slideToggle()
+
+        $(this).toggleClass('on')
+    })
+</script>
